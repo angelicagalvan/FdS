@@ -39,7 +39,6 @@ public class Server{
 				    equipo = InetAddress.getLocalHost();  // Creamos el objeto equipo de la clase InetAddress
 					System.out.println("Equipo: "+equipo);
 					
-					System.out.println("Dirección IP : "+equipo.getHostAddress());
 					System.out.println("Usuario: "+equipo.getHostName());
 					System.out.println("Conexión de equipo: "+equipo.getCanonicalHostName());
 				    	System.out.println ("Fecha y hora: "+cadenaFecha+" "+cadenaHora);
