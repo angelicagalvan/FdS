@@ -11,6 +11,7 @@ public class Cliente{
         PrintWriter out = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()),true);
 
 	String c = "Hola!!!";
+
         out.println(c);
 	String line = "";
 	while  ((line = in.readLine()) != null){
