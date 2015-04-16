@@ -17,7 +17,6 @@ public class Servidor01{
 
 			
 
-
 			ServerSocket s = new ServerSocket(puerto);
 			String comandoSalir = "exit";
 			String nmaquina = "maquina";
