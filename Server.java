@@ -1,5 +1,7 @@
 import java.net.InetAddress;
 import java.text.SimpleDateFormat;
+import javax.swing.*;
+//import javax.swing.filechooser.FileSystemView;
 import java.util.*;
 import java.net.*;
 import java.io.*;
@@ -37,11 +39,15 @@ public class Server{
 				    out.println("Hola! -> " + pathDesktop);
 
 				    equipo = InetAddress.getLocalHost();  // Creamos el objeto equipo de la clase InetAddress
-					System.out.println("Equipo: "+equipo);
+					//String nombre_equipo = equipo;
+					String usuario = equipo.getHostName();
+					String conexion = equipo.getCanonicalHostName();
+
+					out.println("Equipo: "+equipo);
 					
-					System.out.println("Usuario: "+equipo.getHostName());
-					System.out.println("Conexión de equipo: "+equipo.getCanonicalHostName());
-				    	System.out.println ("Fecha y hora: "+cadenaFecha+" "+cadenaHora);
+					out.println("Usuario: "+usuario);
+					out.println("Conexión de equipo: "+conexion);
+				    	out.println ("Fecha y hora: "+cadenaFecha+" "+cadenaHora);
 				    if (entrada.trim().equals(comandoSalir))
 				        return;
 				} 

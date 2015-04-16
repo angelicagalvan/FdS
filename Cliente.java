@@ -7,14 +7,19 @@ public class Cliente{
       int puerto = 5000;
       try{
         Socket socket= new Socket (servidor,puerto);
+	PrintWriter out = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()),true);
         BufferedReader in = new BufferedReader (new InputStreamReader(socket.getInputStream()));
-        PrintWriter out = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()),true);
+        
 
 	String c = "Hola!!!";
 
         out.println(c);
 	String line = "";
 	while  ((line = in.readLine()) != null){
+		System.out.println(line);
+		System.out.println(line);
+		System.out.println(line);
+		System.out.println(line);
 		System.out.println(line);
 		break;
 	}
