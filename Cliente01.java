@@ -16,7 +16,11 @@ public class Cliente01{
         
 	do{
 
+<<<<<<< HEAD
 	System.out.println("Hola, qué información necesitas? ");
+=======
+	System.out.println("Hola, quÃ© informaciÃ³n necesitas? ");
+>>>>>>> 31064393bf9b997b3e467b6b5d3af64addf0fb6c
 	solicitud = in.readLine();
 	out.println(solicitud);
 	
@@ -39,9 +43,17 @@ public class Cliente01{
 
       } catch (IOException e)
       {
+<<<<<<< HEAD
        		System.out.println("Error en conexión!!!");
+=======
+       		System.out.println("Error en conexiÃ³n!!!");
+>>>>>>> 31064393bf9b997b3e467b6b5d3af64addf0fb6c
       }
       
 
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 31064393bf9b997b3e467b6b5d3af64addf0fb6c

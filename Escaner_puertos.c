@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 	struct sockaddr_in conect; 
  	
 	conect.sin_family = AF_INET;
-	conect.sin_addr.s_addr = inet_addr("192.168.11.48");
+	conect.sin_addr.s_addr = inet_addr("127.0.0.1");
 	bzero(&(conect.sin_zero), 8);
 	printf("\n\n");
  	printf("Puerto ........... Estado \n");

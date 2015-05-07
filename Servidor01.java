@@ -40,7 +40,11 @@ public class Servidor01{
 					if (entrada.trim().equals(nmaquina)){
 					equipo = InetAddress.getLocalHost();  // Creamos el objeto equipo de la clase InetAddress
 					String nom_equipo= equipo.getHostName();
+<<<<<<< HEAD
 					System.out.println("Máquina: " + nom_equipo);
+=======
+					System.out.println("MÃ¡quina: " + nom_equipo);
+>>>>>>> 31064393bf9b997b3e467b6b5d3af64addf0fb6c
                                     	o.writeUTF(nom_equipo);
 					}
 					else if (entrada.trim().equals(dimac)){
@@ -85,4 +89,8 @@ public class Servidor01{
 	}
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 31064393bf9b997b3e467b6b5d3af64addf0fb6c
